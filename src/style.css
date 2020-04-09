@@ -1,0 +1,216 @@
+.navbar {
+  width: 100%;
+  background-color: #1e1c1c;
+  transition: visibility 0.5s, opacity 0.1s;
+  display: block;
+  top: 0;
+  position: fixed;
+}
+
+.navbar a {
+  float: left;
+  color: azure;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 15px;
+  text-align: center;
+  justify-self: center;
+}
+
+.main-content {
+  padding-top: 55px;
+}
+
+body {
+
+  margin: 0;
+}
+
+
+
+html{
+  background-color: bisque;
+}
+
+.menu{
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+}
+
+.board{
+  /*background-color: #FF4136;*/
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  border: 3px dashed black;
+  padding: 0;
+  transform: translate(-50%, -50%);
+}
+
+.boardRow{
+  height: 50px;
+  margin: 1px 0 1px 0;
+}
+
+.block{
+  border: none;
+  margin: 0 1px 0 1px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  /*fixes char placement in block*/
+  /*#line-height: none;
+  */
+  outline: none;
+  /*fixes button movement on click*/
+  vertical-align: top;
+  font-family: Comic Sans MS, serif;
+  font-size: 20px;
+}
+
+.clock{
+  font-family: Comic Sans MS, serif;
+  font-size: 30px;
+}
+
+/* Real Stuff */
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(76, 135, 175);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+  /* position: absolute; */
+  left: 45%;
+  top: 85%;
+  width: 10%;
+  text-align: center;
+  font-family: Comic Sans MS, serif;
+}
+
+.clock{
+  left: 40%;
+  top: 85%;
+  text-align: center;
+  font-size: 30px;
+  /* position: relative; */
+  text-align: center;
+}
+
+.comment{
+  text-align: center;
+  font-family: Comic Sans MS, serif;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  left: 30%;
+  width: 40%;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+label{
+  font-family: Comic Sans MS, serif;
+  font-size: 20px;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-bottom : 100px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(76, 135, 175);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+  /* position: absolute; */
+  left: 45%;
+  top: 250px;
+  width: 10%;
+  text-align: center;
+  /* position: relative; */
+  font-family: Comic Sans MS, serif;
+  font-size: 20px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+option {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+option:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
